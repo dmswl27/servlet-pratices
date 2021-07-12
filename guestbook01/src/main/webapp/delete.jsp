@@ -4,16 +4,16 @@
 	
 <%
 	request.setCharacterEncoding("utf-8");
-	Long no = Long.parseLong(request.getParameter("no")); 
-	String passward = request.getParameter("password");
+		Long no = Long.parseLong(request.getParameter("no")); 
+		String passward = request.getParameter("password");
 
 
-	GuestbookVo vo = new GuestbookVo();
-	vo.setNo(no);
-	vo.setPassward(passward);
-	
-	new GuestbookDao().delete(vo);
-	
-	response.sendRedirect(request.getContextPath());
-%>
+		GuestbookVo vo = new GuestbookVo();
+		vo.setNo(no);
+		vo.setPassward(passward);
+		
+		new GuestbookDao().delete(vo);
+		
+		response.sendRedirect(request.getContextPath());
+	%>
 	

@@ -4,19 +4,19 @@
 	
 <%
 	request.setCharacterEncoding("utf-8");
-	String name = request.getParameter("name");
-	String passward = request.getParameter("password");
-	String message = request.getParameter("message");
+		String name = request.getParameter("name");
+		String passward = request.getParameter("password");
+		String message = request.getParameter("message");
 
-	GuestbookVo vo = new GuestbookVo();
-	vo.setName(name);
-	vo.setPassward(passward);
-	vo.setMessage(message);
-	
-	new GuestbookDao().insert(vo);
-	
-	response.sendRedirect(request.getContextPath());
-%>
+		GuestbookVo vo = new GuestbookVo();
+		vo.setName(name);
+		vo.setPassward(passward);
+		vo.setMessage(message);
+		
+		new GuestbookDao().insert(vo);
+		
+		response.sendRedirect(request.getContextPath());
+	%>
 	
 	
 

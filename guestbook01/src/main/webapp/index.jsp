@@ -4,7 +4,7 @@
 <%@page import="com.douzone.guestbook.dao.GuestbookDao"%>
 <%@page import="com.douzone.guestbook.vo.GuestbookVo"%>
 <%
-	List<GuestbookVo> list = new GuestbookDao().findAll();
+List<GuestbookVo> list = new GuestbookDao().findAll();
 %>
 <html>
 <head>

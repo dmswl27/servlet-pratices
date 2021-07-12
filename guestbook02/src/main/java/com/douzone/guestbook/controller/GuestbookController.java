@@ -13,6 +13,7 @@ import com.douzone.guestbook.dao.GuestbookDao;
 import com.douzone.guestbook.vo.GuestbookVo;
 
 
+
 public class GuestbookController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -26,6 +27,8 @@ public class GuestbookController extends HttpServlet {
 			System.out.println("gd");
 		 	RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/deleteform.jsp");
 		 	rd.forward(request, response);
+		 	
+		 	
 		
 		}else if("add".equals(action)) {
 			String name = request.getParameter("name");
